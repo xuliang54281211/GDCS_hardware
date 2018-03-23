@@ -1,0 +1,7 @@
+STATUS: PSpice Model Import Wizard for "Capture" (16.6.0.d001)
+STATUS:  
+   INFO: OLB driven flow
+   INFO: Input File: E:\LIANGS\LIANG_LIBRARY\MY_LIBRARY.OLB
+   INFO: Symbol Name: RES
+  ERROR: Symbol "RES" not found in symbol library "E:\LIANGS\LIANG_LIBRARY\MY_LIBRARY.OLB".
+STATUS: 1 Error messages, 0 Warning messages
