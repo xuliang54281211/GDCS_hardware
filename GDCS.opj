@@ -143,8 +143,9 @@
     (FileView
       (Path "Design Resources")
       (Path "Design Resources" ".\gdcs.dsn")
+      (Path "Design Resources" ".\gdcs.dsn" "SCHEMATIC1")
       (Path "Outputs")
-      (Select "Design Resources" "Library"))
+      (Select "Design Resources" ".\gdcs.dsn"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -155,8 +156,8 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -30 25 1107 25 409")
-        (Scroll "392 494")
-        (Zoom "101")
+        (Scroll "0 479")
+        (Zoom "77")
         (Occurrence "/"))
       (Path "E:\LIANGS\GD_CS\GDCS_HARDWARE\GDCS.DSN")
       (Schematic "SCHEMATIC1")
