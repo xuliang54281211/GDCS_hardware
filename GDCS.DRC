@@ -1,4 +1,4 @@
-Date and Time : 03/24/18 09:00:04
+Date and Time : 03/26/18 21:46:01
 
 --------------------------------------------------
 Checking Schematic: SCHEMATIC1
@@ -33,15 +33,6 @@ INFO(ORCAP-36105): Checking Missing Pin Numbers
 
 Checking Device with Zero pins  
 INFO(ORCAP-36101): Checking Missing PCB Footprint Property  
-#1 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U3: SCHEMATIC1, PAGE2 (106.68, 205.74).
-#2 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance D4: SCHEMATIC1, PAGE2 (200.66, 213.36).
-#3 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U4: SCHEMATIC1, PAGE2 (96.52, 60.96).
-#4 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance U5: SCHEMATIC1, PAGE2 (287.02, 33.02).
-#5 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance Q1: SCHEMATIC1, PAGE1 (378.46, 147.32).
-#6 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance L1: SCHEMATIC1, PAGE2 (124.46, 60.96).
-#7 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance L2: SCHEMATIC1, PAGE2 (231.14, 213.36).
-#8 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance Y1: SCHEMATIC1, PAGE1 (50.80, 167.64).
-#9 ERROR(ORCAP-36002): Property "PCB Footprint" missing from instance D2: SCHEMATIC1, PAGE2 (33.02, 76.20).
 
 INFO(ORCAP-2211): Check High Speed Properties Syntax
 

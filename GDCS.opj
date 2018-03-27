@@ -8,6 +8,8 @@
       (File ".\my_library.olb"
         (Type "Schematic Library"))
       (File "d:\orcad16.6\tools\capture\library\capsym.olb"
+        (Type "Schematic Library"))
+      (File "g:\cadence\tools\capture\library\discrete.olb"
         (Type "Schematic Library")))
     (NoModify)
     (File ".\gdcs.dsn"
@@ -21,7 +23,7 @@
     (DRC_View_Output "FALSE")
     (DRC_Run_Electrical_Rules "TRUE")
     (DRC_Run_Physical_Rules "TRUE")
-    (DRC_Report_File "E:\LIANGS\GD_CS\GDCS_HARDWARE\GDCS.DRC")
+    (DRC_Report_File "G:\GD\GDCS_hardware\GDCS.DRC")
     (DRC_Check_Ports "FALSE")
     (DRC_Check_Off-Page_Connectors "FALSE")
     (DRC_Report_Ports_and_Off-page_Connectors "FALSE")
@@ -46,15 +48,44 @@
     (DRC_Type_Mismatch "TRUE")
     (DRC_Visible_Power_pins "FALSE")
     (DRC_Report_Unused_Part_Packages "TRUE")
-    (DRC_Check_Name_Prop_For_HierBlocks "FALSE"))
+    (DRC_Check_Name_Prop_For_HierBlocks "FALSE")
+    (Netlist_TAB "8")
+    (OTHER_Part_Value "{Value}")
+    (OTHER_Netlist_File "GDCS.asc")
+    (OTHER_Netlist_File2 "GDCS.CMP")
+    (OTHER_View_Output "FALSE")
+    (OTHER_View_Output2 "FALSE")
+    (OTHER_Formatter "orPadspcb.dll")
+    (OTHER_PCB_Footprint "{PCB Footprint}")
+    (OTHER_Switch0 "FALSE")
+    (OTHER_Switch1 "FALSE")
+    (OTHER_Switch2 "FALSE")
+    (OTHER_Switch3 "FALSE")
+    (OTHER_Switch4 "FALSE")
+    (OTHER_Switch5 "FALSE")
+    (OTHER_Switch6 "FALSE"))
   (Folder "Outputs"
     (File ".\gdcs.drc"
+      (Type "Report"))
+    (File ".\gdcs.asc"
       (Type "Report")))
   (Folder "Referenced Projects")
   (PartMRUSelector
+    (2N3904/TO
+      (FullPartName "2N3904/TO.Normal")
+      (LibraryName "G:\CADENCE\TOOLS\CAPTURE\LIBRARY\TRANSISTOR.OLB")
+      (DeviceIndex "0"))
+    (2N3904
+      (FullPartName "2N3904.Normal")
+      (LibraryName "G:\CADENCE\TOOLS\CAPTURE\LIBRARY\TRANSISTOR.OLB")
+      (DeviceIndex "0"))
     (DIODE
       (FullPartName "DIODE.Normal")
-      (LibraryName "E:\LIANGS\GD_CS\GDCS_HARDWARE\MY_LIBRARY.OLB")
+      (LibraryName "G:\GD\GDCS_HARDWARE\MY_LIBRARY.OLB")
+      (DeviceIndex "0"))
+    (LED
+      (FullPartName "LED.Normal")
+      (LibraryName "G:\GD\GDCS_HARDWARE\MY_LIBRARY.OLB")
       (DeviceIndex "0"))
     (GND
       (LibraryName "D:\ORCAD16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
@@ -106,10 +137,6 @@
       (FullPartName "RES_0603.Normal")
       (LibraryName "E:\LIANGS\LIANG_LIBRARY\MY_LIBRARY.OLB")
       (DeviceIndex "0"))
-    (2N3904
-      (FullPartName "2N3904.Normal")
-      (LibraryName "D:\ORCAD16.6\TOOLS\CAPTURE\LIBRARY\TRANSISTOR.OLB")
-      (DeviceIndex "0"))
     (HS0038
       (FullPartName "HS0038.Normal")
       (LibraryName "E:\LIANGS\LIANG_LIBRARY\MY_LIBRARY.OLB")
@@ -144,34 +171,36 @@
       (Path "Design Resources")
       (Path "Design Resources" ".\gdcs.dsn")
       (Path "Design Resources" ".\gdcs.dsn" "SCHEMATIC1")
-      (Path "Outputs")
-      (Select "Design Resources" ".\gdcs.dsn"))
+      (Path "Design Resources" "Library")
+      (Path "Design Resources" "Library"
+         "g:\cadence\tools\capture\library\discrete.olb")
+      (Path "Outputs"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 0 200 0 346"))
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 346"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 25 1107 25 409")
-        (Scroll "0 479")
-        (Zoom "77")
+        (Placement "44 0 1 -1 -1 -8 -31 52 1688 52 512")
+        (Scroll "0 774")
+        (Zoom "139")
         (Occurrence "/"))
-      (Path "E:\LIANGS\GD_CS\GDCS_HARDWARE\GDCS.DSN")
+      (Path "G:\GD\GDCS_HARDWARE\GDCS.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE1"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 75 1157 75 459")
-        (Scroll "34 562")
-        (Zoom "94")
+        (Placement "44 0 1 -1 -1 -8 -31 78 1714 78 538")
+        (Scroll "0 50")
+        (Zoom "100")
         (Occurrence "/"))
-      (Path "E:\LIANGS\GD_CS\GDCS_HARDWARE\GDCS.DSN")
+      (Path "G:\GD\GDCS_HARDWARE\GDCS.DSN")
       (Schematic "SCHEMATIC1")
       (Page "PAGE2")))
-  (MPSSessionName "Administrator")
-  (LastUsedLibraryBrowseDirectory "D:\ORCAD16.6\tools\capture\library")
+  (MPSSessionName "damnit")
+  (LastUsedLibraryBrowseDirectory "G:\Cadence\tools\capture\library")
   (ISPCBBASICLICENSE "false"))
