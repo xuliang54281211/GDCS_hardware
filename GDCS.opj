@@ -179,14 +179,14 @@
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 346"))
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 346"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 52 1688 52 512")
-        (Scroll "105 395")
-        (Zoom "103")
+        (Scroll "-224 3")
+        (Zoom "69")
         (Occurrence "/"))
       (Path "G:\GD\GDCS_HARDWARE\GDCS.DSN")
       (Schematic "SCHEMATIC1")
@@ -194,9 +194,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 78 1714 78 538")
-        (Scroll "0 50")
-        (Zoom "100")
+        (Placement "44 2 3 -1 -1 -8 -31 78 1714 78 538")
+        (Scroll "0 286")
+        (Zoom "112")
         (Occurrence "/"))
       (Path "G:\GD\GDCS_HARDWARE\GDCS.DSN")
       (Schematic "SCHEMATIC1")
