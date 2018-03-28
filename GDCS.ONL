@@ -1,10 +1,10 @@
 (PCB GDCS
  (description
-  (timeStamp "2018 03 26 13 46 15")
+  (timeStamp "2018 03 28 13 39 54")
   (program "CAPTURE.EXE" (Version "16.6.0.d001"))
   (source "Original data from OrCAD/CAPTURE schematic")
   (title "")
-  (date "Monday, March 26, 2018")
+  (date "Wednesday, March 28, 2018")
   (document "G:\\GD\\GDCS_HARDWARE\\GDCS.DSN")
   (revision "")
   (organization "")
@@ -187,6 +187,13 @@
      (timestamp 000061A7)
      ("Source Package" RES_0603)
      (Value 30k))))
+  (component LED
+   (place D5
+    (property 
+     ("PCB Footprint" LED0603)
+     (timestamp 0000C4E2)
+     ("Source Package" LED)
+     (Value TSAL6200))))
   (component DIODE
    (place D2
     (property 
@@ -204,12 +211,6 @@
     (property 
      ("PCB Footprint" DIO)
      (timestamp 00005CF0)
-     ("Source Package" DIODE)
-     (Value DIODE)))
-   (place D5
-    (property 
-     ("PCB Footprint" DIO)
-     (timestamp 0000B2E6)
      ("Source Package" DIODE)
      (Value DIODE))))
   (component CON_8_singal
@@ -690,7 +691,7 @@
      (Number 18)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" RFID)
+     ("Net Name" GDO0)
      (Order 17)
      ("Is No Connect" False)))
    (pin 999 19
@@ -701,7 +702,7 @@
      (Number 19)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" RFID_DATA)
+     ("Net Name" CSN)
      (Order 18)
      ("Is No Connect" False)))
    (pin 999 20
@@ -944,7 +945,7 @@
      (Number 42)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" GDO0)
+     ("Net Name" RFID)
      (Order 41)
      ("Is No Connect" False)))
    (pin 999 43
@@ -955,7 +956,7 @@
      (Number 43)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" CSN)
+     ("Net Name" RFID_DATA)
      (Order 42)
      ("Is No Connect" False)))
    (pin 999 44
@@ -1474,7 +1475,7 @@
      ("Swap Id" "-1")
      (Type Passive)
      (Order 10)
-     ("Is No Connect" False)))
+     ("Is No Connect" True)))
    (pin 999 12
     (property 
      (pinname 12)
@@ -1539,7 +1540,7 @@
      ("Swap Id" "-1")
      (Type Passive)
      (Order 16)
-     ("Is No Connect" False)))
+     ("Is No Connect" True)))
    (pin 999 18
     (property 
      (pinname 18)
@@ -1560,7 +1561,7 @@
      ("Swap Id" "-1")
      (Type Passive)
      (Order 18)
-     ("Is No Connect" False)))
+     ("Is No Connect" True)))
    (pin 999 20
     (property 
      (pinname 20)
@@ -1619,7 +1620,7 @@
      (Number 2)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" GDO0)
+     ("Net Name" SCK)
      (Order 1)
      ("Is No Connect" False)))
    (pin 999 3
@@ -1630,7 +1631,7 @@
      (Number 3)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" CSN)
+     ("Net Name" MISO/GDO1)
      (Order 2)
      ("Is No Connect" False)))
    (pin 999 4
@@ -1641,7 +1642,7 @@
      (Number 4)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" SCK)
+     ("Net Name" MOSI)
      (Order 3)
      ("Is No Connect" False)))
    (pin 999 5
@@ -1652,7 +1653,7 @@
      (Number 5)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" MOSI)
+     ("Net Name" GDO0)
      (Order 4)
      ("Is No Connect" False)))
    (pin 999 6
@@ -1663,7 +1664,7 @@
      (Number 6)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" MISO/GDO1)
+     ("Net Name" CSN)
      (Order 5)
      ("Is No Connect" False)))
    (pin 999 7
@@ -1737,6 +1738,31 @@
      ("Net Name" N16795)
      (Order 1)
      ("Is No Connect" False))))
+  (image LED
+   (property 
+    (sourcelib G:\\GD\\GDCS_HARDWARE\\MY_LIBRARY.OLB))
+   (pin 999 2
+    (property 
+     (pinname ANODE)
+     (pintype 4)
+     (Name ANODE)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N056881)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 1
+    (property 
+     (pinname CATHODE)
+     (pintype 4)
+     (Name CATHODE)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N478251)
+     (Order 1)
+     ("Is No Connect" False))))
   (image SW_PUSH_4foot
    (property 
     (sourcelib E:\\LIANGS\\LIANG_LIBRARY\\MY_LIBRARY.OLB))
@@ -1806,7 +1832,7 @@
      (Number 1)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" N457981)
+     ("Net Name" N478251)
      (Order 1)
      ("Is No Connect" False)))
    (pin 999 3
@@ -1831,13 +1857,13 @@
      (nettype P)
      (netdir 1))
    (pins
-     U1-43 J4-3))
+     U1-19 J4-6))
   (net GDO0
     (property 
      (nettype P)
      (netdir 1))
    (pins
-     U1-42 J4-2))
+     U1-18 J4-5))
   (net GND
     (property 
      (nettype S))
@@ -1876,13 +1902,13 @@
      (nettype P)
      (netdir 1))
    (pins
-     U1-16 J4-6))
+     U1-16 J4-3))
   (net MOSI
     (property 
      (nettype P)
      (netdir 1))
    (pins
-     U1-17 J4-5))
+     U1-17 J4-4))
   (net N00551
    (pins
      U1-5 Y1-2 R1-1 C1-2))
@@ -1892,6 +1918,9 @@
   (net N00605
    (pins
      U1-6 R2-2))
+  (net N056881
+   (pins
+     R6-2 D5-2))
   (net N06291
    (pins
      R7-2 R8-2 Q1-2))
@@ -1943,12 +1972,9 @@
   (net N24757
    (pins
      U3-2 R20-2 R22-2 R23-1))
-  (net N457981
+  (net N478251
    (pins
-     D5-1 Q1-1))
-  (net N45806
-   (pins
-     R6-2 D5-2))
+     Q1-1 D5-1))
   (net NRST
     (property 
      (nettype P)
@@ -1960,19 +1986,19 @@
      (nettype P)
      (netdir 1))
    (pins
-     U1-18 R14-1))
+     U1-42 R14-1))
   (net RFID_DATA
     (property 
      (nettype P)
      (netdir 1))
    (pins
-     U1-19 U3-1 R24-1 C32-1))
+     U1-43 U3-1 R24-1 C32-1))
   (net SCK
     (property 
      (nettype P)
      (netdir 1))
    (pins
-     U1-15 J4-4))
+     U1-15 J4-2))
   (net TCLK/PA14
     (property 
      (nettype P)

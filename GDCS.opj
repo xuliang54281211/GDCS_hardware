@@ -16,7 +16,6 @@
       (Type "Schematic Design"))
     (BuildFileAddedOrDeleted "x")
     (CompileFileAddedOrDeleted "x")
-    (Board_sim_option "VHDL_flow")
     (DRC_Scope "0")
     (DRC_Action "0")
     (DRC_Create_Warnings "TRUE")
@@ -63,7 +62,8 @@
     (OTHER_Switch3 "FALSE")
     (OTHER_Switch4 "FALSE")
     (OTHER_Switch5 "FALSE")
-    (OTHER_Switch6 "FALSE"))
+    (OTHER_Switch6 "FALSE")
+    (Board_sim_option "VHDL_flow"))
   (Folder "Outputs"
     (File ".\gdcs.drc"
       (Type "Report"))
@@ -71,6 +71,10 @@
       (Type "Report")))
   (Folder "Referenced Projects")
   (PartMRUSelector
+    (LED
+      (FullPartName "LED.Normal")
+      (LibraryName "G:\GD\GDCS_HARDWARE\MY_LIBRARY.OLB")
+      (DeviceIndex "0"))
     (2N3904/TO
       (FullPartName "2N3904/TO.Normal")
       (LibraryName "G:\CADENCE\TOOLS\CAPTURE\LIBRARY\TRANSISTOR.OLB")
@@ -81,10 +85,6 @@
       (DeviceIndex "0"))
     (DIODE
       (FullPartName "DIODE.Normal")
-      (LibraryName "G:\GD\GDCS_HARDWARE\MY_LIBRARY.OLB")
-      (DeviceIndex "0"))
-    (LED
-      (FullPartName "LED.Normal")
       (LibraryName "G:\GD\GDCS_HARDWARE\MY_LIBRARY.OLB")
       (DeviceIndex "0"))
     (GND
@@ -171,22 +171,22 @@
       (Path "Design Resources")
       (Path "Design Resources" ".\gdcs.dsn")
       (Path "Design Resources" ".\gdcs.dsn" "SCHEMATIC1")
+      (Path "Design Resources" ".\gdcs.dsn" "Design Cache")
       (Path "Design Resources" "Library")
-      (Path "Design Resources" "Library"
-         "g:\cadence\tools\capture\library\discrete.olb")
-      (Path "Outputs"))
+      (Path "Outputs")
+      (Select "Design Resources" ".\gdcs.dsn"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 346"))
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 346"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -8 -31 52 1688 52 512")
-        (Scroll "0 774")
-        (Zoom "139")
+        (Scroll "105 395")
+        (Zoom "103")
         (Occurrence "/"))
       (Path "G:\GD\GDCS_HARDWARE\GDCS.DSN")
       (Schematic "SCHEMATIC1")
