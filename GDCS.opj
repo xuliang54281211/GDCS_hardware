@@ -174,7 +174,7 @@
       (Path "Design Resources" ".\gdcs.dsn" "Design Cache")
       (Path "Design Resources" "Library")
       (Path "Outputs")
-      (Select "Design Resources" ".\gdcs.dsn"))
+      (Select "Design Resources" ".\gdcs.dsn" "Design Cache" "CON_20"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
@@ -184,9 +184,9 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 52 1688 52 512")
-        (Scroll "-224 3")
-        (Zoom "69")
+        (Placement "44 2 3 -1 -1 -8 -31 52 1688 52 512")
+        (Scroll "-71 3")
+        (Zoom "101")
         (Occurrence "/"))
       (Path "G:\GD\GDCS_HARDWARE\GDCS.DSN")
       (Schematic "SCHEMATIC1")
@@ -194,8 +194,8 @@
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 78 1714 78 538")
-        (Scroll "0 286")
+        (Placement "44 0 1 -1 -1 -8 -31 78 1714 78 538")
+        (Scroll "0 0")
         (Zoom "112")
         (Occurrence "/"))
       (Path "G:\GD\GDCS_HARDWARE\GDCS.DSN")
