@@ -1,15 +1,9 @@
-*PADS-ECO-V9.5-MILS*
+*PADS-ECO-V9.5-METRIC*
+*REMARK*  old file: C:\PADS Projects\ecogtmp0.asc
+*REMARK*  new file: C:\PADS Projects\ecogtmp1.asc
+*REMARK*  created by ECOGEN (Version 6.4v) on 2018/4/17 15:41:44
+*CHGPART*
+D5  LED0603  CON2
 
-*REMARK* -- GDCS.pcb -- Sun Apr 01 22:57:13 2018
-
-*END*
-*PADS-ECO-V9.5-MILS*
-
-*REMARK* -- GDCS.pcb -- Sun Apr 01 23:29:39 2018
-
-*END*
-*PADS-ECO-V9.5-MILS*
-
-*REMARK* -- GDCS.pcb -- Mon Apr 02 19:49:09 2018
-
+*REMARK*  Deleted pins: 0,  Added pins: 0
 *END*

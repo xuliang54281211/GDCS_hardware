@@ -1,11 +1,11 @@
 (PCB GDCS
  (description
-  (timeStamp "2018 03 28 13 39 54")
+  (timeStamp "2018 04 23 06 19 04")
   (program "CAPTURE.EXE" (Version "16.6.0.d001"))
   (source "Original data from OrCAD/CAPTURE schematic")
   (title "")
-  (date "Wednesday, March 28, 2018")
-  (document "G:\\GD\\GDCS_HARDWARE\\GDCS.DSN")
+  (date "Monday, April 23, 2018")
+  (document "E:\\LIANGS\\GD_CS\\GDCS_HD_4-14\\GDCS_HARDWARE\\GDCS.DSN")
   (revision "")
   (organization "")
   (address1 "")
@@ -43,6 +43,12 @@
      ("Source Package" CON_2)
      (Value CON_2))))
   (component RES_0603
+   (place R25
+    (property 
+     ("PCB Footprint" R0603)
+     (timestamp 0000CE9A)
+     ("Source Package" RES_0603)
+     (Value 100R)))
    (place R1
     (property 
      ("PCB Footprint" R0603)
@@ -144,13 +150,13 @@
      ("PCB Footprint" R0603)
      (timestamp 00005ED8)
      ("Source Package" RES_0603)
-     (Value 820)))
+     (Value 620)))
    (place R18
     (property 
      ("PCB Footprint" R0603)
      (timestamp 00005F47)
      ("Source Package" RES_0603)
-     (Value 30k)))
+     (Value 68K)))
    (place R19
     (property 
      ("PCB Footprint" R0603)
@@ -162,35 +168,35 @@
      ("PCB Footprint" R0603)
      (timestamp 0000607B)
      ("Source Package" RES_0603)
-     (Value 30k)))
+     (Value 10K)))
    (place R21
     (property 
      ("PCB Footprint" R0603)
      (timestamp 00006095)
      ("Source Package" RES_0603)
-     (Value 30k)))
+     (Value 4.7M)))
    (place R22
     (property 
      ("PCB Footprint" R0603)
      (timestamp 000060AF)
      ("Source Package" RES_0603)
-     (Value 30k)))
+     (Value 220K)))
    (place R23
     (property 
      ("PCB Footprint" R0603)
      (timestamp 0000618D)
      ("Source Package" RES_0603)
-     (Value 30k)))
+     (Value 10k)))
    (place R24
     (property 
      ("PCB Footprint" R0603)
      (timestamp 000061A7)
      ("Source Package" RES_0603)
-     (Value 30k))))
+     (Value 2.2M))))
   (component LED
    (place D5
     (property 
-     ("PCB Footprint" LED0603)
+     ("PCB Footprint" CON2)
      (timestamp 0000C4E2)
      ("Source Package" LED)
      (Value TSAL6200))))
@@ -212,7 +218,7 @@
      ("PCB Footprint" DIO)
      (timestamp 00005CF0)
      ("Source Package" DIODE)
-     (Value DIODE))))
+     (Value 1N4148))))
   (component CON_8_singal
    (place J4
     (property 
@@ -335,7 +341,7 @@
      ("PCB Footprint" C0603)
      (timestamp 00005DBE)
      ("Source Package" CAPNP_0603)
-     (Value 10nF)))
+     (Value 1nF)))
    (place C29
     (property 
      ("PCB Footprint" C0603)
@@ -395,19 +401,37 @@
      ("PCB Footprint" C0603)
      (timestamp 00005EF2)
      ("Source Package" CAPNP_0603)
-     (Value 0.1uF)))
+     (Value 102)))
    (place C31
     (property 
      ("PCB Footprint" C0603)
      (timestamp 00005F61)
      ("Source Package" CAPNP_0603)
-     (Value 10nF)))
+     (Value 10nF/68pF)))
    (place C32
     (property 
      ("PCB Footprint" C0603)
      (timestamp 00006201)
      ("Source Package" CAPNP_0603)
-     (Value 10nF)))
+     (Value 102)))
+   (place C33
+    (property 
+     ("PCB Footprint" C0603)
+     (timestamp 0000CF76)
+     ("Source Package" CAPNP_0603)
+     (Value 104)))
+   (place C34
+    (property 
+     ("PCB Footprint" C0603)
+     (timestamp 0000CF86)
+     ("Source Package" CAPNP_0603)
+     (Value 102)))
+   (place C35
+    (property 
+     ("PCB Footprint" C0603)
+     (timestamp 0000E5EE)
+     ("Source Package" CAPNP_0603)
+     (Value 104)))
    (place C10
     (property 
      ("PCB Footprint" C0603)
@@ -451,6 +475,13 @@
      (timestamp 0000BAD1)
      ("Source Package" 2N3904/TO)
      (Value 2N3904/TO))))
+  (component Spi_flash_8pins
+   (place J6
+    (property 
+     ("PCB Footprint" W25QXX)
+     (timestamp 0000E35C)
+     ("Source Package" Spi_flash_8pins)
+     (Value Spi_flash_8pins))))
   (component CON_2_double
    (place J5
     (property 
@@ -473,6 +504,31 @@
      ("Source Package" HS0038)
      (Value HS0038)))))
  (library
+  (image RES_0603
+   (property 
+    (sourcelib E:\\LIANGS\\LIANG_LIBRARY\\MY_LIBRARY.OLB))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)
+     (Name 1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N23754)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)
+     (Name 2)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" N52904)
+     (Order 1)
+     ("Is No Connect" False))))
   (image CAPNP_0603
    (property 
     (sourcelib E:\\LIANGS\\GD_CS\\GDCS_HARDWARE\\MY_LIBRARY.OLB))
@@ -647,7 +703,6 @@
      (Number 14)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" IRA_IN)
      (Order 13)
      ("Is No Connect" False)))
    (pin 999 15
@@ -658,7 +713,6 @@
      (Number 15)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" SCK)
      (Order 14)
      ("Is No Connect" False)))
    (pin 999 16
@@ -669,7 +723,7 @@
      (Number 16)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" MISO/GDO1)
+     ("Net Name" IRA_IN)
      (Order 15)
      ("Is No Connect" False)))
    (pin 999 17
@@ -680,7 +734,7 @@
      (Number 17)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" MOSI)
+     ("Net Name" SCK)
      (Order 16)
      ("Is No Connect" False)))
    (pin 999 18
@@ -691,7 +745,7 @@
      (Number 18)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" GDO0)
+     ("Net Name" MISO/GDO1)
      (Order 17)
      ("Is No Connect" False)))
    (pin 999 19
@@ -702,7 +756,7 @@
      (Number 19)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" CSN)
+     ("Net Name" MOSI)
      (Order 18)
      ("Is No Connect" False)))
    (pin 999 20
@@ -713,6 +767,7 @@
      (Number 20)
      ("Swap Id" "-1")
      (Type Passive)
+     ("Net Name" GDO0)
      (Order 19)
      ("Is No Connect" True)))
    (pin 999 21
@@ -723,6 +778,7 @@
      (Number 21)
      ("Swap Id" "-1")
      (Type Passive)
+     ("Net Name" CSN)
      (Order 20)
      ("Is No Connect" True)))
    (pin 999 22
@@ -733,6 +789,7 @@
      (Number 22)
      ("Swap Id" "-1")
      (Type Passive)
+     ("Net Name" GDO2)
      (Order 21)
      ("Is No Connect" True)))
    (pin 999 23
@@ -765,6 +822,7 @@
      (Number 25)
      ("Swap Id" "-1")
      (Type Passive)
+     ("Net Name" SPI2_NSS)
      (Order 24)
      ("Is No Connect" True)))
    (pin 999 26
@@ -775,6 +833,7 @@
      (Number 26)
      ("Swap Id" "-1")
      (Type Passive)
+     ("Net Name" SPI2_CLK)
      (Order 25)
      ("Is No Connect" True)))
    (pin 999 27
@@ -785,6 +844,7 @@
      (Number 27)
      ("Swap Id" "-1")
      (Type Passive)
+     ("Net Name" SPI2_MISO)
      (Order 26)
      ("Is No Connect" True)))
    (pin 999 28
@@ -795,6 +855,7 @@
      (Number 28)
      ("Swap Id" "-1")
      (Type Passive)
+     ("Net Name" SPI2_MOSI)
      (Order 27)
      ("Is No Connect" True)))
    (pin 999 29
@@ -1135,32 +1196,8 @@
      (Number 8)
      ("Swap Id" "-1")
      (Type Passive)
+     ("Net Name" GND)
      (Order 7)
-     ("Is No Connect" False))))
-  (image RES_0603
-   (property 
-    (sourcelib E:\\LIANGS\\LIANG_LIBRARY\\MY_LIBRARY.OLB))
-   (pin 999 1
-    (property 
-     (pinname 1)
-     (pintype 4)
-     (Name 1)
-     (Number 1)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" N00551)
-     (Order 0)
-     ("Is No Connect" False)))
-   (pin 999 2
-    (property 
-     (pinname 2)
-     (pintype 4)
-     (Name 2)
-     (Number 2)
-     ("Swap Id" "-1")
-     (Type Passive)
-     ("Net Name" N00558)
-     (Order 1)
      ("Is No Connect" False))))
   (image MP2359
    (property 
@@ -1675,6 +1712,7 @@
      (Number 7)
      ("Swap Id" "-1")
      (Type Passive)
+     ("Net Name" GDO2)
      (Order 6)
      ("Is No Connect" True)))
    (pin 999 8
@@ -1712,6 +1750,97 @@
      (Type Passive)
      ("Net Name" GND_POWER)
      (Order 1)
+     ("Is No Connect" False))))
+  (image Spi_flash_8pins
+   (property 
+    (sourcelib "E:\\LIANGS\\GD_CS\\GDCS_HD_4-14\\GDCS_HARDWARE\\MY_LIBRARY.OLB"))
+   (pin 999 1
+    (property 
+     (pinname CS)
+     (pintype 4)
+     (Name CS)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" SPI2_NSS)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname DO)
+     (pintype 4)
+     (Name DO)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" SPI2_MISO)
+     (Order 1)
+     ("Is No Connect" False)))
+   (pin 999 3
+    (property 
+     (pinname WP)
+     (pintype 4)
+     (Name WP)
+     (Number 3)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" VCC3.3)
+     (Order 2)
+     ("Is No Connect" False)))
+   (pin 999 4
+    (property 
+     (pinname GND)
+     (pintype 4)
+     (Name GND)
+     (Number 4)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" GND_POWER)
+     (Order 3)
+     ("Is No Connect" False)))
+   (pin 999 5
+    (property 
+     (pinname DI)
+     (pintype 4)
+     (Name DI)
+     (Number 5)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" SPI2_MOSI)
+     (Order 4)
+     ("Is No Connect" False)))
+   (pin 999 6
+    (property 
+     (pinname CLK)
+     (pintype 4)
+     (Name CLK)
+     (Number 6)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" SPI2_CLK)
+     (Order 5)
+     ("Is No Connect" False)))
+   (pin 999 7
+    (property 
+     (pinname HOLD)
+     (pintype 4)
+     (Name HOLD)
+     (Number 7)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" VCC3.3)
+     (Order 6)
+     ("Is No Connect" False)))
+   (pin 999 8
+    (property 
+     (pinname VCC)
+     (pintype 4)
+     (Name VCC)
+     (Number 8)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" VCC3.3)
+     (Order 7)
      ("Is No Connect" False))))
   (image DIODE
    (property 
@@ -1857,19 +1986,25 @@
      (nettype P)
      (netdir 1))
    (pins
-     U1-19 J4-6))
+     U1-21 J4-6))
   (net GDO0
     (property 
      (nettype P)
      (netdir 1))
    (pins
-     U1-18 J4-5))
+     U1-20 J4-5))
+  (net GDO2
+    (property 
+     (nettype P)
+     (netdir 1))
+   (pins
+     U1-22 J4-7))
   (net GND
     (property 
      (nettype S))
    (pins
-     U3-4 C26-2 C27-2 R15-2 R16-2 C28-2 R19-2 R20-1 R21-1
-     C32-2))
+     U3-4 U3-8 C26-2 C27-2 R15-2 R16-2 C28-2 R19-2 R20-1
+     R21-1 C32-2 C34-2 C33-2))
   (net GND_POWER
     (property 
      (nettype S))
@@ -1878,13 +2013,14 @@
      SW2-4 SW2-3 J1-4 J1-6 J1-8 J1-10 J1-12 J1-14 J1-16
      J1-18 J1-20 U2-2 C5-1 R8-1 C9-1 C7-2 J5-2 C10-1
      D3-2 J4-8 C6-1 R13-1 C15-1 C17-2 C18-2 C19-2 C21-2
-     C20-2 C23-2 C22-2 U5-1 U5-2 C8-2 C16-2 Q1-3))
+     C20-2 C23-2 C22-2 U5-1 U5-2 C8-2 C16-2 Q1-3 J6-4
+     C35-2))
   (net IRA_IN
     (property 
      (nettype P)
      (netdir 1))
    (pins
-     U1-14 U2-1 R5-2))
+     U1-16 U2-1 R5-2))
   (net IRA_OUT
     (property 
      (nettype P)
@@ -1902,13 +2038,13 @@
      (nettype P)
      (netdir 1))
    (pins
-     U1-16 J4-3))
+     U1-18 J4-3))
   (net MOSI
     (property 
      (nettype P)
      (netdir 1))
    (pins
-     U1-17 J4-4))
+     U1-19 J4-4))
   (net N00551
    (pins
      U1-5 Y1-2 R1-1 C1-2))
@@ -1950,7 +2086,7 @@
      R14-2 L2-2))
   (net N23754
    (pins
-     L2-1 C26-1 D4-2))
+     L2-1 C26-1 R25-1))
   (net N23862
    (pins
      D4-1 C27-1 R15-1 C29-2))
@@ -1975,6 +2111,9 @@
   (net N478251
    (pins
      Q1-1 D5-1))
+  (net N52904
+   (pins
+     D4-2 R25-2))
   (net NRST
     (property 
      (nettype P)
@@ -1998,7 +2137,31 @@
      (nettype P)
      (netdir 1))
    (pins
-     U1-15 J4-2))
+     U1-17 J4-2))
+  (net SPI2_CLK
+    (property 
+     (nettype P)
+     (netdir 1))
+   (pins
+     U1-26 J6-6))
+  (net SPI2_MISO
+    (property 
+     (nettype P)
+     (netdir 1))
+   (pins
+     U1-27 J6-2))
+  (net SPI2_MOSI
+    (property 
+     (nettype P)
+     (netdir 1))
+   (pins
+     U1-28 J6-5))
+  (net SPI2_NSS
+    (property 
+     (nettype P)
+     (netdir 1))
+   (pins
+     U1-25 J6-1))
   (net TCLK/PA14
     (property 
      (nettype P)
@@ -2063,7 +2226,8 @@
      (nettype S))
    (pins
      R3-1 R4-1 J1-1 J1-2 U2-3 C5-2 R5-1 R6-1 J4-1
-     C6-2 R12-1 C17-1 R23-2 U5-4 C16-1))
+     C6-2 R12-1 C17-1 R23-2 U5-4 C16-1 C34-1 C33-1 J6-3
+     J6-7 J6-8 C35-1))
   (net VDD3.3
     (property 
      (nettype S))
