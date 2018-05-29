@@ -1,9 +1,14 @@
 *PADS-ECO-V9.5-METRIC*
 *REMARK*  old file: C:\PADS Projects\ecogtmp0.asc
 *REMARK*  new file: C:\PADS Projects\ecogtmp1.asc
-*REMARK*  created by ECOGEN (Version 6.4v) on 2018/4/17 15:41:44
+*REMARK*  created by ECOGEN (Version 6.4v) on 2018/4/26 11:34:12
 *CHGPART*
-D5  LED0603  CON2
+C10  C0603  C1206
+D2  DIO_SOD323  DIO_SS14
+D3  DIO_SOD323  DIO_SS14
+L1  L0603  L774
+*RENPART*
+J6  U6
 
 *REMARK*  Deleted pins: 0,  Added pins: 0
 *END*
