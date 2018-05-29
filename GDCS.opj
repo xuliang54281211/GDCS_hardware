@@ -77,6 +77,10 @@
       (Type "Report")))
   (Folder "Referenced Projects")
   (PartMRUSelector
+    (CON_3_singal
+      (FullPartName "CON_3_singal.Normal")
+      (LibraryName "G:\GD\GDCS_HARDWARE\MY_LIBRARY.OLB")
+      (DeviceIndex "0"))
     (2N3904
       (FullPartName "2N3904.Normal")
       (LibraryName "E:\LIANGS\GD_CS\GDCS_HD_4-14\GDCS_HARDWARE\MY_LIBRARY.OLB")
@@ -168,9 +172,6 @@
     (SW_PUSH_4foot
       (FullPartName "SW_PUSH_4foot.Normal")
       (LibraryName "E:\LIANGS\LIANG_LIBRARY\MY_LIBRARY.OLB")
-      (DeviceIndex "0"))
-    (PORTLEFT-L
-      (LibraryName "D:\ORCAD16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0")))
   (GlobalState
     (FileView
@@ -178,34 +179,35 @@
       (Path "Design Resources" ".\gdcs.dsn")
       (Path "Design Resources" ".\gdcs.dsn" "SCHEMATIC1")
       (Path "Design Resources" "Library")
-      (Path "Outputs")
-      (Select "Design Resources" ".\gdcs.dsn" "SCHEMATIC1" "PAGE2"))
+      (Path "Design Resources" "Library" ".\my_library.olb")
+      (Path "Outputs"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 346"))
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 346"))
       (Tab 0))
     (Doc
-      (Type "COrSchematicDoc")
+      (Type "COrPartDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 125 1257 125 402")
-        (Scroll "-63 264")
-        (Zoom "58")
-        (Occurrence "/"))
-      (Path "E:\LIANGS\GD_CS\GDCS_HD_4-14\GDCS_HARDWARE\GDCS.DSN")
-      (Schematic "SCHEMATIC1")
-      (Page "PAGE1"))
+        (Placement "44 0 1 -1 -1 -8 -31 208 1499 208 773")
+        (PackageScroll "0 0")
+        (PackageZoom "1")
+        (PartPackage "Part")
+        (Scroll "3217 1253")
+        (Zoom "614"))
+      (Path "G:\GD\GDCS_HARDWARE\MY_LIBRARY.OLB")
+      (Package "CON_3_singal"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -30 0 1132 0 277")
-        (Scroll "-63 298")
-        (Zoom "58")
+        (Placement "44 0 1 -1 -1 -8 -31 26 1610 26 591")
+        (Scroll "0 312")
+        (Zoom "137")
         (Occurrence "/"))
-      (Path "E:\LIANGS\GD_CS\GDCS_HD_4-14\GDCS_HARDWARE\GDCS.DSN")
+      (Path "G:\GD\GDCS_HARDWARE\GDCS.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "PAGE2")))
-  (MPSSessionName "Administrator")
+      (Page "PAGE1")))
+  (MPSSessionName "damnit")
   (LastUsedLibraryBrowseDirectory "G:\Cadence\tools\capture\library")
   (ISPCBBASICLICENSE "false"))
