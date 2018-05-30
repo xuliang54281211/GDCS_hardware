@@ -1,23 +1,9 @@
 *PADS-ECO-V9.5-METRIC*
-*REMARK*  old file: C:\PADS Projects\ecogtmp0.asc
-*REMARK*  new file: C:\PADS Projects\ecogtmp1.asc
-*REMARK*  created by ECOGEN (Version 6.4v) on 2018/5/30 16:40:11
-*DELPIN*
-Q2.1  N81871
-Q2.2  VCC3.3
-U1.33  BEEP
-Q3.1  N81863
-Q3.2  N81867
-Q3.3  N81871
-R28.1  N81863
-R28.2  BEEP
-R29.1  GND_POWER
-R29.2  N81867
-*DELPART*
-Q2  BEEP3_3
-Q3  NPN
-R28  R0603
-R29  R0603
+*REMARK*  old file: G:\PADS\project\ecogtmp0.asc
+*REMARK*  new file: G:\PADS\project\ecogtmp1.asc
+*REMARK*  created by ECOGEN (Version 6.4v) on 2018/5/30 22:31:17
+*CHGPART*
+J4  CON8  CON8_127
 
-*REMARK*  Deleted pins: 10,  Added pins: 0
+*REMARK*  Deleted pins: 0,  Added pins: 0
 *END*

@@ -1,11 +1,11 @@
 (PCB GDCS
  (description
-  (timeStamp "2018 05 30 08 37 16")
+  (timeStamp "2018 05 30 14 29 18")
   (program "CAPTURE.EXE" (Version "16.6.0.d001"))
   (source "Original data from OrCAD/CAPTURE schematic")
   (title "")
   (date "Wednesday, May 30, 2018")
-  (document "E:\\LIANGS\\GD_CS\\GDCS_HD_4-14\\GDCS_HARDWARE\\GDCS.DSN")
+  (document "G:\\GD\\GDCS_HARDWARE\\GDCS.DSN")
   (revision "")
   (organization "")
   (address1 "")
@@ -246,7 +246,7 @@
   (component CON_8_singal
    (place J4
     (property 
-     ("PCB Footprint" CON8)
+     ("PCB Footprint" CON8_127)
      (timestamp 000043A3)
      ("Source Package" CON_8_singal)
      (Value CC1101))))
