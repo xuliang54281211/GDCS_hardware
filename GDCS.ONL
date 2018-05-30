@@ -1,10 +1,10 @@
 (PCB GDCS
  (description
-  (timeStamp "2018 05 09 03 35 18")
+  (timeStamp "2018 05 30 08 37 16")
   (program "CAPTURE.EXE" (Version "16.6.0.d001"))
   (source "Original data from OrCAD/CAPTURE schematic")
   (title "")
-  (date "Wednesday, May 09, 2018")
+  (date "Wednesday, May 30, 2018")
   (document "E:\\LIANGS\\GD_CS\\GDCS_HD_4-14\\GDCS_HARDWARE\\GDCS.DSN")
   (revision "")
   (organization "")
@@ -49,6 +49,18 @@
      (timestamp 0000CE9A)
      ("Source Package" RES_0603)
      (Value 100R)))
+   (place R26
+    (property 
+     ("PCB Footprint" R0603)
+     (timestamp 00013BC5)
+     ("Source Package" RES_0603)
+     (Value 510R)))
+   (place R27
+    (property 
+     ("PCB Footprint" R0603)
+     (timestamp 00013BDF)
+     ("Source Package" RES_0603)
+     (Value 510R)))
    (place R1
     (property 
      ("PCB Footprint" R0603)
@@ -199,7 +211,19 @@
      ("PCB Footprint" CON2)
      (timestamp 0000C4E2)
      ("Source Package" LED)
-     (Value TSAL6200))))
+     (Value TSAL6200)))
+   (place D6
+    (property 
+     ("PCB Footprint" LED0805)
+     (timestamp 00013B8D)
+     ("Source Package" LED)
+     (Value LED2)))
+   (place D7
+    (property 
+     ("PCB Footprint" 0805)
+     (timestamp 00013BAB)
+     ("Source Package" LED)
+     (Value LED1))))
   (component DIODE
    (place D2
     (property 
@@ -253,6 +277,13 @@
      (timestamp 00002B42)
      ("Source Package" LM358N)
      (Value LM358N))))
+  (component CON_3_singal
+   (place J6
+    (property 
+     ("PCB Footprint" CON3)
+     (timestamp 0001212A)
+     ("Source Package" CON_3_singal)
+     (Value AUDIO_INTER))))
   (component CON_20
    (place J1
     (property 
@@ -703,6 +734,7 @@
      (Number 14)
      ("Swap Id" "-1")
      (Type Passive)
+     ("Net Name" AUDIO_OUT)
      (Order 13)
      ("Is No Connect" False)))
    (pin 999 15
@@ -1039,6 +1071,7 @@
      (Number 45)
      ("Swap Id" "-1")
      (Type Passive)
+     ("Net Name" LED2_G)
      (Order 44)
      ("Is No Connect" True)))
    (pin 999 46
@@ -1049,6 +1082,7 @@
      (Number 46)
      ("Swap Id" "-1")
      (Type Passive)
+     ("Net Name" LED1_R)
      (Order 45)
      ("Is No Connect" True)))
    (pin 999 47
@@ -1153,7 +1187,7 @@
      (Number 4)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" GND)
+     ("Net Name" GND_POWER)
      (Order 3)
      ("Is No Connect" False)))
    (pin 999 5
@@ -1222,7 +1256,7 @@
      (Number 2)
      ("Swap Id" "-1")
      (Type Passive)
-     ("Net Name" N16727)
+     ("Net Name" GND_POWER)
      (Order 1)
      ("Is No Connect" False)))
    (pin 999 3
@@ -1843,6 +1877,42 @@
      ("Net Name" GND_POWER)
      (Order 1)
      ("Is No Connect" False))))
+  (image CON_3_singal
+   (property 
+    (sourcelib G:\\GD\\GDCS_HARDWARE\\MY_LIBRARY.OLB))
+   (pin 999 1
+    (property 
+     (pinname 1)
+     (pintype 4)
+     (Name 1)
+     (Number 1)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" AUDIO_OUT)
+     (Order 0)
+     ("Is No Connect" False)))
+   (pin 999 2
+    (property 
+     (pinname 2)
+     (pintype 4)
+     (Name 2)
+     (Number 2)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" VCC3.3)
+     (Order 1)
+     ("Is No Connect" False)))
+   (pin 999 3
+    (property 
+     (pinname 3)
+     (pintype 4)
+     (Name 3)
+     (Number 3)
+     ("Swap Id" "-1")
+     (Type Passive)
+     ("Net Name" GND_POWER)
+     (Order 2)
+     ("Is No Connect" False))))
   (image DIODE
    (property 
     (sourcelib G:\\GD\\GDCS_ORCAD\\MY_LIBRARY.OLB))
@@ -1982,6 +2052,12 @@
      (nettype S))
    (pins
      U1-8 R13-2 C24-2 C25-2))
+  (net AUDIO_OUT
+    (property 
+     (nettype P)
+     (netdir 1))
+   (pins
+     U1-14 J6-1))
   (net CSN
     (property 
      (nettype P)
@@ -2000,22 +2076,17 @@
      (netdir 1))
    (pins
      U1-20 J4-7))
-  (net GND
-    (property 
-     (nettype S))
-   (pins
-     U3-4 C26-2 C27-2 R15-2 R16-2 C28-2 R19-2 R20-1 R21-1
-     C32-2 C34-2 C33-2))
   (net GND_POWER
     (property 
      (nettype S))
    (pins
      U1-23 U1-35 U1-44 U1-47 C1-1 C2-1 SW1-4 SW1-3 C3-2
      C4-2 SW2-4 SW2-3 J1-4 J1-6 J1-8 J1-10 J1-12 J1-14
-     J1-16 J1-18 J1-20 U2-2 C5-1 R8-1 C9-1 C7-2 J5-2
-     C10-1 D3-2 J4-8 C6-1 R13-1 C15-1 C17-2 C18-2 C19-2
-     C21-2 C20-2 C23-2 C22-2 U5-1 C8-2 C16-2 U6-4 C35-2
-     Q1-2))
+     J1-16 J1-18 J1-20 U2-2 C5-1 R8-1 U3-4 C9-1 R10-2
+     C7-2 J5-2 C10-1 D3-2 U4-2 J4-8 C6-1 R13-1 C15-1
+     C17-2 C18-2 C19-2 C21-2 C20-2 C23-2 C22-2 C26-2 C27-2
+     R15-2 R16-2 C28-2 R19-2 R20-1 R21-1 C32-2 U5-1 C8-2
+     C16-2 C34-2 C33-2 U6-4 C35-2 Q1-2 J6-3))
   (net IRA_IN
     (property 
      (nettype P)
@@ -2034,6 +2105,18 @@
      (netdir 1))
    (pins
      U1-29 R4-2 C4-1 SW2-1 SW2-2))
+  (net LED1_R
+    (property 
+     (nettype P)
+     (netdir 1))
+   (pins
+     U1-46 D7-1))
+  (net LED2_G
+    (property 
+     (nettype P)
+     (netdir 1))
+   (pins
+     U1-45 D6-1))
   (net MISO/GDO1
     (property 
      (nettype P)
@@ -2070,9 +2153,6 @@
   (net N16715
    (pins
      R10-1 R9-2 U4-3))
-  (net N16727
-   (pins
-     R10-2 U4-2))
   (net N16795
    (pins
      D2-1 C9-2 R11-1 C10-2 U4-5))
@@ -2115,6 +2195,12 @@
   (net N52904
    (pins
      D4-2 R25-2))
+  (net N80942
+   (pins
+     D6-2 R26-1))
+  (net N80946
+   (pins
+     D7-2 R27-1))
   (net NRST
     (property 
      (nettype P)
@@ -2229,7 +2315,7 @@
      U1-24 U1-36 U1-48 R3-1 R4-1 J1-1 J1-2 U2-3 C5-2
      R5-1 R6-1 U3-8 J4-1 C6-2 R12-1 C17-1 C18-1 C19-1
      C21-1 C20-1 C23-1 C22-1 R23-2 U5-2 U5-4 C16-1 C34-1
-     C33-1 U6-3 U6-7 U6-8 C35-1))
+     C33-1 U6-3 U6-7 U6-8 C35-1 J6-2 R26-2 R27-2))
   (net VDDA
     (property 
      (nettype S))

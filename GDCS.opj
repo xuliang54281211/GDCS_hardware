@@ -77,13 +77,21 @@
       (Type "Report")))
   (Folder "Referenced Projects")
   (PartMRUSelector
-    (CON_3_singal
-      (FullPartName "CON_3_singal.Normal")
-      (LibraryName "G:\GD\GDCS_HARDWARE\MY_LIBRARY.OLB")
-      (DeviceIndex "0"))
     (2N3904
       (FullPartName "2N3904.Normal")
       (LibraryName "E:\LIANGS\GD_CS\GDCS_HD_4-14\GDCS_HARDWARE\MY_LIBRARY.OLB")
+      (DeviceIndex "0"))
+    (BEEP
+      (FullPartName "BEEP.Normal")
+      (LibraryName "E:\LIANGS\GD_CS\GDCS_HD_4-14\GDCS_HARDWARE\MY_LIBRARY.OLB")
+      (DeviceIndex "0"))
+    (LED
+      (FullPartName "LED.Normal")
+      (LibraryName "E:\LIANGS\GD_CS\GDCS_HD_4-14\GDCS_HARDWARE\MY_LIBRARY.OLB")
+      (DeviceIndex "0"))
+    (CON_3_singal
+      (FullPartName "CON_3_singal.Normal")
+      (LibraryName "G:\GD\GDCS_HARDWARE\MY_LIBRARY.OLB")
       (DeviceIndex "0"))
     (CAPNP_0603
       (FullPartName "CAPNP_0603.Normal")
@@ -96,10 +104,6 @@
     (CON_4_singal
       (FullPartName "CON_4_singal.Normal")
       (LibraryName "E:\LIANGS\GD_CS\GDCS_HD_4-14\GDCS_HARDWARE\MY_LIBRARY.OLB")
-      (DeviceIndex "0"))
-    (LED
-      (FullPartName "LED.Normal")
-      (LibraryName "G:\GD\GDCS_HARDWARE\MY_LIBRARY.OLB")
       (DeviceIndex "0"))
     (2N3904/TO
       (FullPartName "2N3904/TO.Normal")
@@ -168,10 +172,6 @@
     (CON_20
       (FullPartName "CON_20.Normal")
       (LibraryName "E:\LIANGS\LIANG_LIBRARY\MY_LIBRARY.OLB")
-      (DeviceIndex "0"))
-    (SW_PUSH_4foot
-      (FullPartName "SW_PUSH_4foot.Normal")
-      (LibraryName "E:\LIANGS\LIANG_LIBRARY\MY_LIBRARY.OLB")
       (DeviceIndex "0")))
   (GlobalState
     (FileView
@@ -179,35 +179,34 @@
       (Path "Design Resources" ".\gdcs.dsn")
       (Path "Design Resources" ".\gdcs.dsn" "SCHEMATIC1")
       (Path "Design Resources" "Library")
-      (Path "Design Resources" "Library" ".\my_library.olb")
-      (Path "Outputs"))
+      (Path "Outputs")
+      (Select "Design Resources" ".\gdcs.dsn"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 346"))
+        (Placement "44 2 3 -1 -1 -8 -30 0 200 0 346"))
       (Tab 0))
-    (Doc
-      (Type "COrPartDoc")
-      (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 208 1499 208 773")
-        (PackageScroll "0 0")
-        (PackageZoom "1")
-        (PartPackage "Part")
-        (Scroll "3217 1253")
-        (Zoom "614"))
-      (Path "G:\GD\GDCS_HARDWARE\MY_LIBRARY.OLB")
-      (Package "CON_3_singal"))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -8 -31 26 1610 26 591")
-        (Scroll "0 312")
-        (Zoom "137")
+        (Placement "44 0 1 -1 -1 -8 -30 50 1182 50 327")
+        (Scroll "-170 40")
+        (Zoom "45")
         (Occurrence "/"))
-      (Path "G:\GD\GDCS_HARDWARE\GDCS.DSN")
+      (Path "E:\LIANGS\GD_CS\GDCS_HD_4-14\GDCS_HARDWARE\GDCS.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "PAGE1")))
-  (MPSSessionName "damnit")
+      (Page "PAGE1"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -30 75 1207 75 352")
+        (Scroll "417 20")
+        (Zoom "101")
+        (Occurrence "/"))
+      (Path "E:\LIANGS\GD_CS\GDCS_HD_4-14\GDCS_HARDWARE\GDCS.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE2")))
+  (MPSSessionName "Administrator")
   (LastUsedLibraryBrowseDirectory "G:\Cadence\tools\capture\library")
   (ISPCBBASICLICENSE "false"))
