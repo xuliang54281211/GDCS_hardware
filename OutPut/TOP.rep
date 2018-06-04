@@ -1,13 +1,13 @@
 
 
-Photo-Plotter Apertures Report
-==============================
-Position  Width  Hgt/ID  Shape    Qty
+光绘图机开孔报告
+================
+位置      宽度  高度/ID  形状     数量
 ========  =====  ======  =====    ===
    10        1       0    RND       1
    11       30      38    RECT     50
    12       38      30    RECT     62
-   13      78.74     31.5    ANNL     39
+   13      78.74     31.5    ANNL     31
    14       36       0    SQR       2
    15       50      36    RECT      1
    16      23.62     47.24    RECT     14
@@ -19,14 +19,15 @@ Position  Width  Hgt/ID  Shape    Qty
    22      78.74       0    RND       2
    23      62.99     23.62    RECT      8
    26      49.21     17.72    RECT      2
-   27       10       0    RND     419
-   28       12       0    RND     217
-   29       15       0    RND      43
-   30       22       0    RND      75
-   31        8       0    RND    2022
+   27       10       0    RND     411
+   28       12       0    RND     222
+   29       15       0    RND      42
+   30       22       0    RND      74
+   31        8       0    RND    4360
    57      59.06     9.84    RECT     24
    58      9.84     59.06    RECT     24
    59       50      60    RECT      4
+   60      45.28     27.56    ANNL      8
 
 
 
